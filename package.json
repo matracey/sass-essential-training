@@ -1,0 +1,20 @@
+{
+    "name": "sass-essentials",
+    "version": "0.0.1",
+    "description": "A website for the Sass Essential Training course on Lynda.com",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/matracey/sassEssentials.git"
+    },
+    "author": "Martin Tracey",
+    "devDependencies": {
+        "@types/gulp": "^4.0.5",
+        "eslint": "^5.9.0",
+        "gulp": "^3.8.11",
+        "gulp-eslint": "^5.0.0",
+        "gulp-sass": "^4.0.2",
+        "gulp-sourcemaps": "^2.6.4",
+        "gulp-webserver": "^0.9.1",
+        "node-sass": "^4.10.0"
+    }
+}
