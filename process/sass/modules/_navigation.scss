@@ -52,6 +52,10 @@ nav {
 	footer & {
 		margin-top:20px;
 		min-height: 200px;
-		background-color: darken($blue, 15%);
+        background-color: darken($blue, 15%);
+        
+        @include break(0, 500px) {
+            display: none;
+        }
 	}
 }
