@@ -1,7 +1,4 @@
 $color-btn-text: $color-backgrounds;
-$color-btn-default: $color-main;
-$color-btn-hot: $red;
-$color-btn-cool: $blue;
 $roundness: 20px 0 20px 0;
 
 %btn { /* %btn is an invisible class. */
@@ -18,19 +15,16 @@ $roundness: 20px 0 20px 0;
 	color: $color-btn-text;
 }
 
-.btn-default {
-	@extend %btn; /* inherits all of the styles of the invisible btn class. */
-	background: $color-btn-default;
-}
+$color-btn-names: "default", "hot", "cool";
+$color-btn-values: $color-main, $red, $blue;
 
-.btn-hot {
-	@extend %btn;
-	background: $color-btn-hot;
-}
+@each $name in $color-btn-names {
+    $i: index($list: $color-btn-names, $value: $name);
 
-.btn-cool {
-	@extend %btn;
-	background: $color-btn-cool;
+    .btn-#{$name} {
+        @extend %btn; /* inherits all of the styles of the invisible btn class. */
+        background-color: nth($list: $color-btn-values, $n: $i);
+    }
 }
 
 .grid {
