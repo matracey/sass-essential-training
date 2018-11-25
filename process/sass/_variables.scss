@@ -1,4 +1,4 @@
-// Load fonts
+// Load Fonts
 @import url(http://fonts.googleapis.com/css?family=Roboto+Slab|Merriweather|Josefin+Slab|Oswald|Bree+Serif);
 
 $darkblue:  #022933;
@@ -17,3 +17,9 @@ $color-headlines:   $red;
 $fallback-fonts: "Segoe UI", -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", Helvetica, sans-serif;
 $font-main: Merriweather, $fallback-fonts;
 $font-highlight: "Bree Serif", $fallback-fonts;
+
+//breakpoints
+
+$small: 450px;
+$medium: 760px;
+$large: 1200px;
