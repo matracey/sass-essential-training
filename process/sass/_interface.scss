@@ -15,15 +15,17 @@ $roundness: 20px 0 20px 0;
 	color: $color-btn-text;
 }
 
-$color-btn-names: "default", "hot", "cool";
-$color-btn-values: $color-main, $red, $blue;
+$color-btn: (
+    default: $color-main,
+    hot: $red,
+    cool: $blue,
+    awesome: $purple
+);
 
-@each $name in $color-btn-names {
-    $i: index($list: $color-btn-names, $value: $name);
-
-    .btn-#{$name} {
+@each $key, $value in $color-btn {
+    .btn-#{$key} {
         @extend %btn; /* inherits all of the styles of the invisible btn class. */
-        background-color: nth($list: $color-btn-values, $n: $i);
+        background-color: $value;
     }
 }
 
