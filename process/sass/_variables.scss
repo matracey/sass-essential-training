@@ -14,6 +14,6 @@ $color-main:        $darkblue;
 $color-backgrounds: $offwhite;
 $color-headlines:   $red;
 
-$fallback-fonts: "Segoe UI", -apple-system, BlinkMacSystemFont, "Roboto", "Helvetica Neue", "Helvetica", sans-serif;
-$font-main: "Merriweather", $fallback-fonts;
+$fallback-fonts: "Segoe UI", -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", Helvetica, sans-serif;
+$font-main: Merriweather, $fallback-fonts;
 $font-highlight: "Bree Serif", $fallback-fonts;
